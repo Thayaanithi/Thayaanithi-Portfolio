@@ -1,0 +1,305 @@
+* {
+  box-sizing:border-box;
+  }
+    
+  body {
+  text-align:center;
+  font-family: 'Prompt', sans-serif;
+  margin: 0 auto;
+  background:rgb(202, 215, 240);
+  }
+    
+  .menubar{
+   margin-bottom: 1em;
+  }
+
+  .menubar .nav-menu{
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .logo{
+  width: 100px;
+  background-color:blue;
+  color:white;
+  border: 3px solid rgb(59, 40, 103);
+  padding: 5px;
+  margin: 0px;
+  }
+       
+  .nav-menu {
+  padding-top: 3.5em;
+  }
+
+  .nav-menu,
+  ul,
+  li a{
+  margin: 0;
+  padding: 0;
+  list-style-type: none; 
+  }
+
+  .menubar, .social-media, a{
+  display: block;
+  line-height: 30px;
+  }
+     
+  .main-content {
+  width: 100%;
+  }
+
+  .wrapper .main-content .header{
+  height: 100vh;
+  background: url(../images/BannerImage.jpg) center / cover no-repeat;
+  text-align: center;
+  }
+
+  #myportfolio h3{
+    text-align: center;
+  }
+
+  .wrapper .main-content #myportfolio .my-work{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 1rem;
+  }
+
+  
+
+figure{
+  margin:0;
+  text-align: center;
+}
+
+  img {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+  #contactme{
+  position: relative;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid #797575;
+  background:#dcdcdc;
+  }
+
+  #contactme li{
+    list-style-type: none; 
+  }
+
+  .form{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  padding: 12px;
+  border: 1px solid #ccc ;
+  border-radius: 4px;
+  margin: 10px;
+  }
+
+  label{
+  margin: 0;
+  padding: 12px 12px 2px 0;
+  display: block;
+  text-align: left;
+  }
+
+  input, textarea {
+  border: black;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 5px;
+  margin: 5px;
+  }
+
+  button {
+  background-color: #426ded;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+  }
+
+  .photo{
+  width:300px;
+  height: auto;
+  float:left;
+  margin:2px 20px 10px 2px;
+  border-radius: 50%;
+  }
+
+  .heading{
+    text-align: center;
+  }
+  section{
+   text-align: left;
+   margin: 3px;
+  }
+
+section h3{
+  text-align: center;
+}
+
+.skills li{
+list-style-type: square;
+margin-left: 15px;
+}
+  .scheme{
+    text-align: left;
+    margin-top: 20px;
+      }
+
+.scheme h2{
+  text-align: center;
+}
+
+  .points li{
+    list-style-type: style type;
+    list-style: square;
+    margin-left: 10px;
+    line-height: 25px;  
+  }
+
+  @media screen and (min-width: 576px)  {
+  .main-content {
+  width: 100%;
+  max-width: 760px;
+  }
+
+.logo{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .menubar .nav-menu{
+  flex-direction: row;
+  justify-content: space-between;
+    }
+
+  .menubar .nav-menu a  {
+  display: inline;
+  }
+
+  
+  h3{
+    text-align: center;
+  }
+
+
+  #contactme{
+    flex-direction: row;
+  }
+
+  .photo{
+    width:300px;
+    float:left;
+    margin:2px 10px 10px 2px;
+    }
+
+
+  }
+
+  @media screen and (min-width: 768px) {
+      .main-content {
+      width: 100%;
+      max-width: 990px;
+      }
+      .logo{
+        margin-left: auto;
+        margin-right: auto;
+
+      a {
+      display: inline;
+      }
+
+      #contactme{
+        flex-direction: row;
+        }
+
+        #contactme .content{
+          width: 30%;
+          }
+
+        
+        #contactme .form{
+          width: 70%;
+        }
+  }
+}
+  @media screen and (min-width: 992px) {
+      .main-content {
+      width: 100%;
+      max-width: 1200px;
+      margin-left: 150px;
+      }
+      .menubar .nav-menu {
+      flex-direction: column;
+      }
+      .menubar{
+      width: 150px;
+      padding: 0px;
+      position: fixed;
+      }
+
+      a {
+      display: block;
+      }
+
+      .header h2{
+        margin-top: 0;
+      }
+
+      #contactme{
+      position: relative;
+      flex-direction:row;
+      align-items: left;
+      }
+
+      #contactme .content{
+      width: 25%;
+      }
+
+      #contactme .content h2{
+      font-size: 20px;
+      }
+
+      #contactme .form{
+      width: 75%;
+      }
+
+      button{
+      color: blue;
+      }
+      
+  }
+
+  /* @media screen and (min-width: 1200px) {
+      .main-content {
+      width: 100%;
+      
+      margin-left:150px;
+      }
+
+      .menubar{
+      width: 150px;
+      padding: 30px 0px;
+      position: fixed;
+      }
+
+      a {
+      display: block;
+      }
+  } */
+  
