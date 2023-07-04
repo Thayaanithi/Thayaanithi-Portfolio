@@ -7,6 +7,7 @@
   font-family: 'Prompt', sans-serif;
   margin: 0 auto;
   background:rgb(202, 215, 240);
+  overflow-x: hidden;
   }
     
   .menubar{
@@ -29,6 +30,7 @@
        
   .nav-menu {
   padding-top: 3.5em;
+  
   }
 
   .nav-menu,
@@ -37,8 +39,11 @@
   margin: 0;
   padding: 0;
   list-style-type: none; 
-  }
-
+   }
+   
+   
+    
+   
   .menubar, .social-media, a{
   display: block;
   line-height: 30px;
@@ -60,7 +65,8 @@
 
   .wrapper .main-content #myportfolio .my-work{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  /* grid-template-columns: 1fr; */
+   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); 
   grid-gap: 1rem;
   }
 
@@ -97,7 +103,12 @@ figure{
     list-style-type: none; 
   }
 
+  .content{
+    width: 200px;
+  }
+
   .form{
+    width: 300px;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -197,7 +208,7 @@ margin-left: 15px;
     text-align: center;
   }
 
-
+  
   #contactme{
     flex-direction: row;
   }
@@ -251,8 +262,18 @@ margin-left: 15px;
       width: 150px;
       padding: 0px;
       position: fixed;
+      
       }
 
+      .logo, a{
+        margin-left: 0;
+      }
+
+      .nav-menu{
+        text-align: left;
+      }
+
+      
       a {
       display: block;
       }
@@ -261,6 +282,10 @@ margin-left: 15px;
         margin-top: 0;
       }
 
+      /* .wrapper .main-content #myportfolio .my-work{
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      } */
+      
       #contactme{
       position: relative;
       flex-direction:row;
@@ -285,21 +310,21 @@ margin-left: 15px;
       
   }
 
-  /* @media screen and (min-width: 1200px) {
-      .main-content {
-      width: 100%;
+   @media screen and (min-width: 1200px) {
+          .main-content {
+      width: auto;
       
       margin-left:150px;
       }
 
       .menubar{
       width: 150px;
-      padding: 30px 0px;
+      padding: 0px;
       position: fixed;
       }
 
       a {
       display: block;
       }
-  } */
+  } 
   
